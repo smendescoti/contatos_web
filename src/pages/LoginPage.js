@@ -1,4 +1,5 @@
 import React from 'react';
+import LoginForm from '../components/forms/LoginForm';
 
 const LoginPage = () => (
     <div className="row">
@@ -6,8 +7,11 @@ const LoginPage = () => (
             <div className="card">
                 <div className="card-body">
                     <div className="text-center">
-                        <h5>Acessar Conta</h5>
-                        <hr />
+                        <img src="https://www.cotiinformatica.com.br/imagens/logo-coti-informatica.png"
+                            className='img-fluid' />
+                        <h5 className="card-title">Acessar conta</h5>
+                        <p className="card-text">Informe suas credenciais de acesso para entrar no sistema.</p>
+                        <LoginForm />
                     </div>
                 </div>
             </div>

@@ -17,3 +17,15 @@ export const postRegister = (data) => {
             }
         )
 }
+
+//função para executar uma chamada POST para o serviço
+//de autenticação de usuários da API
+export const postLogin = (data) => {
+    //utilizando o AXIOS para fazer a requisição POST
+    return axios.post(getApiUrl() + "/api/Account/Login", data)
+        .then(
+            response => {
+                return response.data;
+            }
+        )
+}
